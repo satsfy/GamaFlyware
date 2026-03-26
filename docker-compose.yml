@@ -1,6 +1,6 @@
 services:
   gameflyware:
-    image: renatobrittoaraujo/gameflyware:2
+    image: renatobrittoaraujo/gamaflyware:2
     container_name: gameflyware
     working_dir: /sitl
     mem_limit: 30g

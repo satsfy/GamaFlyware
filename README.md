@@ -72,7 +72,7 @@ git clone https://github.com/RenatoBrittoAraujo/GamaFlyware
 This prebuilt image (\~40 GB) contains PX4-Autopilot, Gazebo Garden, ROS 2 Humble, and all dependencies:
 
 ```bash
-sudo docker pull renatobrittoaraujo/gamaflyware:1
+sudo docker pull renatobrittoaraujo/gamaflyware:2
 ```
 
 > **Note:** Download may take several minutes.
