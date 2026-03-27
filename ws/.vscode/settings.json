@@ -1,0 +1,4 @@
+{
+  "python.autoComplete.extraPaths": ["./install/px4_msgs/local/lib/python3.10/dist-packages"],
+  "python.analysis.extraPaths": ["./install/px4_msgs/local/lib/python3.10/dist-packages"]
+}

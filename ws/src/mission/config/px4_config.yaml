@@ -1,0 +1,4 @@
+mavros:
+  ros__parameters:
+    connection_url: 'udp://@localhost:14540'
+    fcu_protocol: 'v2.0'
