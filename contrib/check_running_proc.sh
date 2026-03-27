@@ -1,0 +1,1 @@
+ps -ef | grep -iE 'px4|gz|gazebo|ruby|ign' | grep -v grep
