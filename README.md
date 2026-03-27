@@ -453,3 +453,17 @@ git fetch gz-upstream
 git subtree pull --prefix=gz gz-upstream <branch> --squash
 # You will be able to resolve conflicts like a normal merge.
 ```
+
+## Licensing
+
+GamaFlyware is a mixed-license repository.
+
+- Project-authored files are MIT licensed (see `LICENSE`).
+- `ORB_SLAM3_files/ORB_SLAM3/` is licensed under GNU GPL v3 (see `ORB_SLAM3_files/ORB_SLAM3/LICENSE`).
+- `gz/` is licensed under BSD 3-Clause, with additional per-model license files in some subdirectories.
+- `ws/src/mission/mission/edra_colab_model.pt` is distributed under MIT terms from EDRA (see `NOTICE`).
+- `docs/figures/` includes mixed provenance images; third-party figures remain under their original copyright terms.
+- Mission scripts import `ultralytics`; before redistribution, verify compliance with the license terms of the `ultralytics` version you install.
+
+QGroundControl is used by this workflow, but the AppImage binary is not committed in this repository.
+See `THIRD_PARTY_LICENSES.md` for a path-based third-party license inventory.

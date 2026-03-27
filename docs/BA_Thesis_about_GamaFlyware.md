@@ -746,7 +746,7 @@ In [18](#ref-18), a monocular visual autonomous landing system is presented for 
 
 GamaFlyware is an end-to-end development environment for multicopter UAV SITL simulation, designed to facilitate the development and testing of UAV systems and MMS in a controlled and reproducible manner. It leverages computer vision features and SLAM and includes 44 simulator maps.
 
-The system is released as open-source software designed to support academic research leveraging existing libraries, with all software released under the permissive MIT license, except for the ORB-SLAM3 portion and QGroundControl, which is under GNU GPL v3. Users are free to inspect, modify, and redistribute the software in accordance with the license terms.
+The system is released as open-source software designed to support academic research while leveraging existing libraries under multiple licenses. Project-authored files are released under MIT, while integrated third-party components keep their original licenses (for example, ORB-SLAM3 under GNU GPL v3 and Gazebo model assets under BSD/Apache variants). Users are free to inspect, modify, and redistribute the software in accordance with each component's license terms.
 
 GamaFlyware uses a containerized architecture built on Docker to ensure a consistent and reproducible development setup. All dependencies, configurations, and software versions are encapsulated, guaranteeing identical behavior across machines. This eliminates the complexities of managing software stacks, simplifies onboarding—users can pull and run the image without manual setup—and enables safe experimentation through easy rollbacks. This setup functionally provides an operating system with necessary software for simulation already included.
 

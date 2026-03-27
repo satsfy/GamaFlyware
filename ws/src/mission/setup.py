@@ -45,7 +45,7 @@ setup(
     maintainer="",
     maintainer_email="",
     description="",
-    license="",
+    license="MIT",
     tests_require=["pytest"],
     entry_points={
         "console_scripts": console_scripts,

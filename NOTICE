@@ -1,16 +1,39 @@
-This repository is primarily licensed under the MIT license (see LICENSE).
+This repository contains code and assets under multiple licenses.
 
-The directory ORB_SLAM3_files/ORB_SLAM3 is distributed under the GNU GPL v3.
-See ORB_SLAM3_files/ORB_SLAM3/LICENSE for details.
+Project-authored files are licensed under MIT (see LICENSE), unless noted
+otherwise in a specific file or directory.
 
-QGroundControl is included and is dual-licensed under Apache 2.0 and GPL v3.
-See QGroundControl documentation for license details.
+Third-party components distributed in this repository:
 
-All other third-party components retain their original licenses as listed below.
+- ORB_SLAM3_files/ORB_SLAM3/:
+  GNU General Public License v3.0
+  (see ORB_SLAM3_files/ORB_SLAM3/LICENSE)
+  Third-party subcomponents inside ORB-SLAM3 keep their own licenses
+  (see ORB_SLAM3_files/ORB_SLAM3/Thirdparty/*).
 
-/sitl/ws/src/mission/mission/edra_colab_model.pt:
+- gz/:
+  BSD 3-Clause License and per-model license files
+  (see gz/LICENSE and LICENSE files under gz/models/)
 
-Copyright (c) 2024 Equipe de Robótica Aérea - EDRA | UnB - Universidade de Brasília
+- ws/src/mission/mission/edra_colab_model.pt:
+  Copyright (c) 2024 Equipe de Robotica Aerea - EDRA | UnB - Universidade de Brasilia
+  MIT License terms reproduced below.
+
+- docs/figures/:
+  Includes both original project images and figures cited from external works.
+  Copyright for third-party figures remains with their respective owners.
+
+QGroundControl is supported by this project workflow, but the AppImage binary is
+not distributed in this repository.
+
+The Python package ultralytics is imported by mission scripts but is not
+vendored in this repository; license obligations depend on the version users
+install in their own environment.
+
+For a maintained inventory of third-party components and paths, see
+THIRD_PARTY_LICENSES.md.
+
+Copyright (c) 2024 Equipe de Robotica Aerea - EDRA | UnB - Universidade de Brasilia
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -29,4 +52,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description></description>
   <maintainer email=""></maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT</license>
    
   <depend>rclpy</depend>
   <depend>px4_msgs</depend>
