@@ -29,12 +29,12 @@ This platform was designed to be used inside a VSCode Dev Container for producti
 
 Tech Stack:
 
-- [PX4 Autopilot]
-- [Gazebo]
-- [ROS 2 Humble]
-- [MAVROS]
-- [QGroundControl]
-- [ORB-SLAM3] - Computer Vision
+- [PX4 Autopilot](https://px4.io/) - Open-source flight control software for drones and other unmanned vehicles.
+- [Gazebo](https://gazebosim.org/) - Advanced 3D robotics simulator used for testing and developing robot applications in realistic environments.
+- [ROS 2 Humble](https://docs.ros.org/en/humble/index.html) - Robot Operating System 2, providing middleware and tools for robotics development.
+- [QGroundControl](https://docs.qgroundcontrol.com/) - Cross-platform ground control station for MAVLink-based drones, offering mission planning and real-time monitoring.
+- [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) - State-of-the-art visual SLAM (Simultaneous Localization and Mapping) system for real-time camera tracking and mapping, used for computer vision tasks.
+- [MAVROS](https://github.com/mavlink/mavros) - ROS package that bridges MAVLink-compatible autopilots (like PX4) with ROS, enabling communication and control.
 - Python libraries: rclpy (for ROS 2 Humble), OpenCV, YOLO, and cv_bridge.
 
 The docker compose working directory is `/sitl`, it runs a privileged container with large memory / CPU limits, X11 socket passthrough for GUI apps and optional NVIDIA GPU reservation.
