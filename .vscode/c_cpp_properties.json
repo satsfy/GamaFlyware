@@ -1,0 +1,17 @@
+{
+    "configurations": [
+      {
+        "name": "Linux",
+        "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+        "intelliSenseMode": "linux-gcc-x64",
+        "cStandard": "c11",
+        "cppStandard": "c++17",
+        "includePath": [
+          "${workspaceFolder}/**",
+          "/opt/ros/humble/include"
+        ]
+      }
+    ],
+    "version": 4
+  }
+  

@@ -1,0 +1,198 @@
+{
+    "restoreTerminals.terminals": [
+        {
+            "splitTerminals": [
+                {
+                    "name": "PX4 SITL",
+                    "commands": [
+                        "source .bashrc; ./sim.sh default"
+                    ]
+                },
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "name": "MAVROS Node",
+                    "commands": [
+                        "ros2 run mavros mavros_node --ros-args -p fcu_url:=udp://@127.0.0.1:14580"
+                    ]
+                },
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "name": "Image Bridge",
+                    "commands": [
+                        "cd ws; source install/setup.bash; ros2 run ros_gz_image image_bridge /camera"
+                    ]
+                },
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "name": "ORB_SLAM3 Webcam",
+                    "commands": [
+                        "cd ORB_SLAM3_files/ORB_SLAM3/webcam; ./run.sh"
+                    ]
+                },
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "name": "QGroundControl",
+                    "commands": [
+                        "su qgcuser; ./QGroundControl.AppImage"
+                    ]
+                }
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "name": "Mission Triangle",
+                    "commands": [
+                        "cd ws; source install/setup.bash; colcon build --packages-select mission; ros2 run mission triangle"
+                    ]
+                },
+            ]
+        },
+    ]
+    
+    
+    
+    "git.ignoreLimitWarning": true,
+    "python.autoComplete.extraPaths": [
+        "/sitl/ws/install/px4_msgs/local/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/share/rclpy",
+        "/opt/ros/humble/share/sensor_msgs",
+        "/sitl/ws/install/px4_msgs/local/lib/python3.10/dist-packages",
+        "/sitl/ws/install/px4_ros_com/lib/python3.10/site-packages",
+        "/sitl/ws/install/your_custom_package/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/dist-packages",
+        // "/sitl/ws/stubs"
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+    ],
+    "python.analysis.extraPaths": [
+        "/sitl/ws/install/px4_msgs/local/lib/python3.10/dist-packages",
+        "/sitl/ws/install/px4_ros_com/lib/python3.10/site-packages",
+        "/sitl/ws/install/your_custom_package/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/dist-packages",
+        "/sitl/ws/install/px4_msgs/local/lib/python3.10/site-packages",
+        "/sitl/ws/install/px4_ros_com/lib/python3.10/site-packages",
+        "/sitl/ws/install/your_custom_package/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/share/rclpy",
+        "/opt/ros/humble/share/sensor_msgs",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+    ],
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.analysis.autoSearchPaths": true,
+    "ros.distro": "humble",
+    "git.ignoredRepositories": [
+        "/sitl/PX4_Autopilot",
+        "./ws/src/px4_msgs",
+        "./ws/src/px4_ros_com",
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "88"
+    ],
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "ostream": "cpp",
+        "chrono": "cpp",
+        "iostream": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "*.ipp": "cpp",
+        "any": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "csignal": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "atomic": "cpp",
+        "strstream": "cpp",
+        "bit": "cpp",
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "codecvt": "cpp",
+        "compare": "cpp",
+        "complex": "cpp",
+        "concepts": "cpp",
+        "condition_variable": "cpp",
+        "cstdint": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "optional": "cpp",
+        "random": "cpp",
+        "ratio": "cpp",
+        "regex": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "fstream": "cpp",
+        "future": "cpp",
+        "initializer_list": "cpp",
+        "iomanip": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "mutex": "cpp",
+        "new": "cpp",
+        "numbers": "cpp",
+        "semaphore": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "stop_token": "cpp",
+        "streambuf": "cpp",
+        "thread": "cpp",
+        "cfenv": "cpp",
+        "cinttypes": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "valarray": "cpp",
+        "variant": "cpp",
+        "shared_mutex": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "nnls": "cpp",
+        "cfcntl": "cpp",
+        "csched": "cpp",
+        "cstdbool": "cpp",
+        "cunistd": "cpp",
+        "coroutine": "cpp",
+        "source_location": "cpp",
+        "alignedvector3": "cpp"
+    },
+}

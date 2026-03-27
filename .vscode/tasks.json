@@ -1,0 +1,59 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "PX4 SITL",
+            "type": "shell",
+            "command": "cd PX4-Autopilot; PX4_GZ_WORLDS=/sitl/gz/worlds GZ_SIM_RESOURCE_PATH=/sitl/gz/models:/sitl/gz/worlds PX4_GZ_WORLD=default make px4_sitl gz_x500_depth",
+            "problemMatcher": []
+        },
+        {
+            "label": "Mission Triangle",
+            "type": "shell",
+            "command": "cd ws; source install/setup.bash; colcon build --packages-select mission; ros2 run mission triangle",
+            "problemMatcher": []
+        },
+        {
+            "label": "Mission Arm Takeoff",
+            "type": "shell",
+            "command": "cd ws; source install/setup.bash; colcon build --packages-select mission; ros2 run mission arm_takeoff",
+            "problemMatcher": []
+        },
+        {
+            "label": "Mission HITL",
+            "type": "shell",
+            "command": "cd ws; source install/setup.bash; colcon build --packages-select mission; ros2 run mission hitl",
+            "problemMatcher": []
+        },
+        {
+            "label": "MAVROS Node",
+            "type": "shell",
+            "command": "ros2 run mavros mavros_node --ros-args -p fcu_url:=udp://@127.0.0.1:14580",
+            "problemMatcher": []
+        },
+        {
+            "label": "Image Bridge",
+            "type": "shell",
+            "command": "cd ws; source install/setup.bash; ros2 run ros_gz_image image_bridge /camera",
+            "problemMatcher": []
+        },
+        {
+            "label": "Camera Script",
+            "type": "shell",
+            "command": "cd ws; source install/setup.bash; python3 src/mission/mission/camera.py",
+            "problemMatcher": []
+        },
+        {
+            "label": "ORB_SLAM3 Webcam",
+            "type": "shell",
+            "command": "cd ORB_SLAM3_files/ORB_SLAM3/webcam; ./run.sh",
+            "problemMatcher": []
+        },
+        {
+            "label": "QGroundControl",
+            "type": "shell",
+            "command": "su qgcuser; ./QGroundControl.AppImage",
+            "problemMatcher": []
+        }
+    ]
+}
