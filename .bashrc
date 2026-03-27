@@ -1,3 +1,5 @@
+# /root/.bashrc sources this file by default
+
 if [[ "${BASH_SOURCE[0]}" != "$0" ]]; then
     _run_px4_sitl_completion() {
         local cur opts
@@ -8,5 +10,5 @@ if [[ "${BASH_SOURCE[0]}" != "$0" ]]; then
         COMPREPLY=( $(compgen -W "${opts}" -- "${cur}") )
     }
     # Register completion for the script by its basename.
-    complete -F _run_px4_sitl_completion sim.sh
+    complete -F _run_px4_sitl_completion run_px4_sitl.sh
 fi

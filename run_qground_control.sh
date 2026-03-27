@@ -1,0 +1,1 @@
+su qgcuser; ./QGroundControl.AppImage

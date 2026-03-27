@@ -5,7 +5,7 @@
                 {
                     "name": "PX4 SITL",
                     "commands": [
-                        "source .bashrc; ./sim.sh default"
+                        "source .bashrc; ./run_px4_sitl.sh default"
                     ]
                 },
             ]

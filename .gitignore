@@ -2,12 +2,12 @@ QGroundControl.AppImage
 
 ORB_SLAM3_files/*
 !ORB_SLAM3_files/ORB_SLAM3/
-ORB_SLAM3_files/ORB_SLAM3/*
-!ORB_SLAM3_files/ORB_SLAM3/webcam/
-!ORB_SLAM3_files/ORB_SLAM3/build.sh
-!ORB_SLAM3_files/ORB_SLAM3/CMakeLists.txt
-ORB_SLAM3_files/ORB_SLAM3/webcam/exec.log
-ORB_SLAM3_files/ORB_SLAM3/webcam/point_cloud.json
+# ORB_SLAM3_files/ORB_SLAM3/*
+# !ORB_SLAM3_files/ORB_SLAM3/webcam/
+# !ORB_SLAM3_files/ORB_SLAM3/build.sh
+# !ORB_SLAM3_files/ORB_SLAM3/CMakeLists.txt
+# ORB_SLAM3_files/ORB_SLAM3/webcam/exec.log
+# ORB_SLAM3_files/ORB_SLAM3/webcam/point_cloud.json
 
 px4_msgs_ws/
 
