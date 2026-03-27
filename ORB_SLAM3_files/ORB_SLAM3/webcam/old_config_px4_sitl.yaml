@@ -1,0 +1,212 @@
+%YAML:1.0
+
+# ================ Camera Parameters
+Camera.type: "PinHole"
+
+# Left Camera calibration and distortion parameters (OpenCV)
+Camera.fx: 1405.3287651720957
+Camera.fy: 1405.102740096106
+Camera.cx: 963.1985450530386
+Camera.cy: 535.4669275828609
+
+# distortion parameters
+Camera.k1: 0.0009486037105037417
+Camera.k2: 0.0010819460438404552
+Camera.p1: -0.0004046176143780036
+Camera.p2: 0.000512056185838065
+
+# Camera resolution
+# Camera.width: 854
+# Camera.width: 714  
+# Camera.height: 480
+
+Camera.width: 1140 
+Camera.height: 720
+
+# Camera frames per second 
+# Camera.fps: 50
+Camera.fps: 30
+
+# # Close/Far threshold. Baseline times.
+# ThDepth: 35.0
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+
+# ================ IMU Parameters
+
+# a ideia para resolve isso, se for possível seria
+# - eleva os dois primeiros valores alto
+# - nos dois walk e-10
+# CONSULTE SE TEM NO X500 do PX4 
+#   // <!-- stddev * raiz(taxa_De_amostragem)
+#   // walk: dynamic.stddev * raiz(taxa_De_amostragem) -->
+
+
+# codigo atual
+
+# IMU.NoiseGyro: 0.0150
+# IMU.NoiseAcc: 0.35 
+# IMU.GyroWalk: 0.00001  
+# IMU.AccWalk: 0.00001 
+# IMU.Frequency: 123
+
+# IMU.NoiseGyro: 0.002044648307166785
+# IMU.NoiseAcc: 0.02037527913919218
+# IMU.GyroWalk: 0.00042486838785675736  
+# IMU.AccWalk: 0.06572670690061994
+# IMU.Frequency: 123
+
+
+# IMU.NoiseGyro: 0.00295
+# IMU.NoiseAcc: 0.02940
+# IMU.GyroWalk: 0.000000000123
+# IMU.AccWalk: 0.000000034640
+# IMU.Frequency: 250
+
+# IMU.NoiseGyro: 0.00034905586945358766
+
+# IMU.NoiseAcc: 0.35 
+# IMU.GyroWalk: 0.000000001  
+# IMU.AccWalk: 0.000000001 
+# IMU.Frequency: 40
+
+# IMU.NoiseGyro: 1000.0150
+# IMU.NoiseAcc: 10000.35 
+# IMU.GyroWalk: 0.000000001  
+# IMU.AccWalk: 0.000000001 
+# IMU.Frequency: 50
+
+# TOTALMENTE ERRADO
+# Transformation from camera 0 to body-frame (imu)
+# Tbc: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: f
+#    data: [ 0,   0,   1,   0.12,
+#           -1,   0,   0,   0.03,
+#            0,  -1,   0,   0.242,
+#            0,   0,   0,   1 ]
+
+
+# Tbc: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: f
+#    data: [1, 0, 0, 0,
+#           0, 1, 0, 0,
+#           0, 0, 1, 0,
+#           0, 0, 0, 1]
+
+# seta para direita (professor!!)
+# Tbc: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: f
+#    data: [0, 0, -1, 0,
+#           0, 1, 0, 0,
+#           1, 0, 0, 0,
+#           0, 0, 0, 1]
+
+# seta para esquerda
+# Tbc: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: f
+#    data: [0, 0, 1, 0,
+#           0, 1, 0, 0,
+#           -1, 0, 0, 0,
+#           0, 0, 0, 1]
+
+# Tbc: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: f
+#    data: [ 0,  0,  1,  0.12,
+#           -1,  0,  0,  0.03,
+#            0, -1,  0,  0.242,
+#            0,  0,  0,  1 ]
+
+# MENOS ERRADO
+# Transformation from camera 0 to body-frame (imu)
+# Tbc: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: f
+#    data: [0, 0, 1, 0,
+#            -1, 0, 0, 0.12,
+#            0, -1, 0, -0.3,
+#            0, 0, 0, 1.]
+
+# TOTALMENTE ERRADO
+# Tbc: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: f
+#    data: [ 0,   0,   1,   0,
+#           -1,   0,   0,   0,
+#            0,  -1,   0,   0,
+#            0,   0,   0,   1 ]
+
+# Tbc: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: f
+#    data: [1, 0, 0, 0,
+#           0, 1, 0, 0,
+#           0, 0, 1, 0,
+#           0, 0, 0, 1]
+
+# Tbc: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: f
+#    data: [1,  0,  0,  0.05,   # translation x = 0.05m
+#           0,  0, -1,  0.1,    # 90° rotation about x: y becomes 0 and z becomes -1, translation y = 0.1m
+#           0,  1,  0,  0,      # third row remains
+#           0,  0,  0,  1]
+
+# ================ ORB Parameters
+
+# ORBextractor.nFeatures: 5000
+# ORBextractor.nFeatures: 2500
+# ORBextractor.nFeatures: 500
+ORBextractor.nFeatures: 400
+# ORBextractor.nFeatures: 150
+# ORBextractor.nFeatures: 100
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+# ORBextractor.scaleFactor: 1.2
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor.nLevels: 8
+# ORBextractor.nLevels: 4
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+
+# You can lower these values if your images have low contrast			
+# ORBextractor.iniThFAST: 31
+# ORBextractor.minThFAST: 7
+# ORBextractor.iniThFAST: 16
+# ORBextractor.minThFAST: 9
+# ORBextractor.iniThFAST: 12
+# ORBextractor.minThFAST: 7
+ORBextractor.iniThFAST: 10
+ORBextractor.minThFAST: 3
+
+# ================ Viewer Parameters
+
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -3.5
+Viewer.ViewpointF: 500.0

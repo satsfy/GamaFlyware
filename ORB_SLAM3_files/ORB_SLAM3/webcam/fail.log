@@ -1,0 +1,128 @@
+[INFO] [1749499637.872964141] [slam_node]: Feeding candidate frame (timestamp: 1749499637.868805) to SLAM
+[INFO] [1749499637.890458970] [slam_node]: Timer callback duration: 17 ms
+[INFO] [1749499637.890523235] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499637.890579458] [slam_node]: Published pose: [0.627, 0.465, 0.031], Q: [-0.003, 0.003, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499637.971101672] [slam_node]: Feeding candidate frame (timestamp: 1749499637.966092) to SLAM
+[INFO] [1749499637.996859063] [slam_node]: Timer callback duration: 25 ms
+[INFO] [1749499637.996933003] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499637.996995372] [slam_node]: Published pose: [0.634, 0.464, 0.030], Q: [-0.003, 0.003, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.020387985] [slam_node]: Feeding candidate frame (timestamp: 1749499638.016265) to SLAM
+[INFO] [1749499638.038889131] [slam_node]: Timer callback duration: 18 ms
+[INFO] [1749499638.038971317] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.039586913] [slam_node]: Published pose: [0.635, 0.464, 0.028], Q: [-0.003, 0.004, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.241857868] [slam_node]: Feeding candidate frame (timestamp: 1749499638.238192) to SLAM
+[INFO] [1749499638.266430877] [slam_node]: Timer callback duration: 24 ms
+[INFO] [1749499638.266514494] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.266586033] [slam_node]: Published pose: [0.638, 0.461, 0.019], Q: [-0.003, 0.007, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.281145012] [slam_node]: Feeding candidate frame (timestamp: 1749499638.275330) to SLAM
+[INFO] [1749499638.303574471] [slam_node]: Timer callback duration: 22 ms
+[INFO] [1749499638.303654805] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.303712066] [slam_node]: Published pose: [0.645, 0.464, 0.026], Q: [-0.002, 0.004, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.348902762] [slam_node]: Feeding candidate frame (timestamp: 1749499638.344966) to SLAM
+[INFO] [1749499638.367761037] [slam_node]: Timer callback duration: 18 ms
+[INFO] [1749499638.367866338] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.367979297] [slam_node]: Published pose: [0.650, 0.464, 0.028], Q: [-0.001, 0.003, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.410234060] [slam_node]: Feeding candidate frame (timestamp: 1749499638.406181) to SLAM
+[INFO] [1749499638.425469836] [slam_node]: Timer callback duration: 15 ms
+[INFO] [1749499638.425537135] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.425587889] [slam_node]: Published pose: [0.651, 0.465, 0.026], Q: [-0.002, 0.004, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.443364942] [slam_node]: Feeding candidate frame (timestamp: 1749499638.437894) to SLAM
+[INFO] [1749499638.461659811] [slam_node]: Timer callback duration: 18 ms
+[INFO] [1749499638.461729764] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.461791712] [slam_node]: Published pose: [0.654, 0.464, 0.026], Q: [-0.002, 0.004, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.479671743] [slam_node]: Feeding candidate frame (timestamp: 1749499638.474632) to SLAM
+[INFO] [1749499638.503209339] [slam_node]: Timer callback duration: 23 ms
+[INFO] [1749499638.503292231] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.503360456] [slam_node]: Published pose: [0.654, 0.465, 0.026], Q: [-0.002, 0.004, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.520808630] [slam_node]: Feeding candidate frame (timestamp: 1749499638.516701) to SLAM
+[INFO] [1749499638.538430380] [slam_node]: Timer callback duration: 17 ms
+[INFO] [1749499638.538511629] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.538575057] [slam_node]: Published pose: [0.655, 0.465, 0.027], Q: [-0.002, 0.004, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.554280088] [slam_node]: Feeding candidate frame (timestamp: 1749499638.551022) to SLAM
+[INFO] [1749499638.577989544] [slam_node]: Timer callback duration: 23 ms
+[INFO] [1749499638.578077989] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.578126560] [slam_node]: Published pose: [0.657, 0.460, 0.023], Q: [-0.005, 0.003, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.585709682] [slam_node]: Feeding candidate frame (timestamp: 1749499638.581309) to SLAM
+[INFO] [1749499638.609350116] [slam_node]: Timer callback duration: 23 ms
+[INFO] [1749499638.609434594] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.609509754] [slam_node]: Published pose: [0.660, 0.463, 0.026], Q: [-0.004, 0.003, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.647068205] [slam_node]: Feeding candidate frame (timestamp: 1749499638.643510) to SLAM
+[INFO] [1749499638.666670535] [slam_node]: Timer callback duration: 19 ms
+[INFO] [1749499638.666742893] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.666789889] [slam_node]: Published pose: [0.662, 0.462, 0.026], Q: [-0.004, 0.003, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.773955281] [slam_node]: Feeding candidate frame (timestamp: 1749499638.770922) to SLAM
+[INFO] [1749499638.790598343] [slam_node]: Timer callback duration: 16 ms
+[INFO] [1749499638.790650560] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.790692743] [slam_node]: Published pose: [0.668, 0.460, 0.027], Q: [-0.005, 0.002, 0.005, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.815616132] [slam_node]: Feeding candidate frame (timestamp: 1749499638.810700) to SLAM
+[INFO] [1749499638.834074841] [slam_node]: Timer callback duration: 18 ms
+[INFO] [1749499638.834138512] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.834184782] [slam_node]: Published pose: [0.667, 0.461, 0.024], Q: [-0.005, 0.003, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.845233370] [slam_node]: Feeding candidate frame (timestamp: 1749499638.840846) to SLAM
+[INFO] [1749499638.869502819] [slam_node]: Timer callback duration: 24 ms
+[INFO] [1749499638.869593718] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.869658863] [slam_node]: Published pose: [0.669, 0.461, 0.025], Q: [-0.005, 0.002, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.907822274] [slam_node]: Feeding candidate frame (timestamp: 1749499638.904129) to SLAM
+[INFO] [1749499638.922739918] [slam_node]: Timer callback duration: 14 ms
+[INFO] [1749499638.922797503] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.922837815] [slam_node]: Published pose: [0.669, 0.462, 0.026], Q: [-0.004, 0.002, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.946821996] [slam_node]: Feeding candidate frame (timestamp: 1749499638.942571) to SLAM
+[INFO] [1749499638.960813420] [slam_node]: Timer callback duration: 13 ms
+[INFO] [1749499638.960877855] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.960924356] [slam_node]: Published pose: [0.671, 0.461, 0.027], Q: [-0.003, 0.002, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499638.979948563] [slam_node]: Feeding candidate frame (timestamp: 1749499638.974019) to SLAM
+[INFO] [1749499638.998109645] [slam_node]: Timer callback duration: 18 ms
+[INFO] [1749499638.998282549] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499638.998344686] [slam_node]: Published pose: [0.672, 0.461, 0.028], Q: [-0.003, 0.002, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499639.178051104] [slam_node]: Feeding candidate frame (timestamp: 1749499639.171650) to SLAM
+[INFO] [1749499639.197928357] [slam_node]: Timer callback duration: 19 ms
+[INFO] [1749499639.197992324] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499639.198056790] [slam_node]: Published pose: [0.679, 0.460, 0.030], Q: [-0.002, 0.001, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499639.246493210] [slam_node]: Feeding candidate frame (timestamp: 1749499639.243009) to SLAM
+[INFO] [1749499639.267425404] [slam_node]: Timer callback duration: 20 ms
+[INFO] [1749499639.267508285] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499639.267575819] [slam_node]: Published pose: [0.680, 0.461, 0.029], Q: [-0.000, 0.002, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499639.298701702] [slam_node]: Feeding candidate frame (timestamp: 1749499639.289505) to SLAM
+[INFO] [1749499639.324564297] [slam_node]: Timer callback duration: 25 ms
+[INFO] [1749499639.324630948] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499639.324679182] [slam_node]: Published pose: [0.682, 0.459, 0.029], Q: [-0.001, 0.001, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499639.332068421] [slam_node]: Feeding candidate frame (timestamp: 1749499639.327991) to SLAM
+[INFO] [1749499639.355059897] [slam_node]: Timer callback duration: 22 ms
+[INFO] [1749499639.355126633] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499639.355182470] [slam_node]: Published pose: [0.683, 0.460, 0.030], Q: [-0.001, 0.001, 0.006, 1.000]
+Image resolution: 1140x720
+[INFO] [1749499639.410765737] [slam_node]: Feeding candidate frame (timestamp: 1749499639.406961) to SLAM
+[INFO] [1749499639.428911001] [slam_node]: Timer callback duration: 18 ms
+[INFO] [1749499639.428971980] [slam_node]: Tracking State: OK (2)
+[INFO] [1749499639.429016775] [slam_node]: Published pose: [0.684, 0.460, 0.027], Q: [0.000, 0.002, 0.006, 1.000]
+Sophus ensure failed in function 'static Sophus::SO3<Scalar_> Sophus::SO3<Scalar_, Options>::expAndTheta(const Tangent&, Sophus::SO3<Scalar_, Options>::Scalar*) [with Scalar_ = float; int Options = 0; Sophus::SO3<Scalar_, Options>::Tangent = Eigen::Matrix<float, 3, 1>; Sophus::SO3<Scalar_, Options>::Scalar = float]', file '/sitl/ORB_SLAM3_files/ORB_SLAM3/Thirdparty/Sophus/sophus/so3.hpp', line 614.
+SO3::exp failed! omega: -nan -nan -nan, real: -nan, img: -nan
+Caught signal 6, shutting down gracefully.
+Executor finished spinning
+SLAMNode destructor called, shutting down SLAM system...
+Shutdown
+SLAM system shutdown completed.
+./run.sh: line 2: 755686 Aborted                 (core dumped) ./webcam ../Vocabulary/ORBvoc.txt ./config_px4_sitl.yaml
+root@5c9b477fa2b0:/sitl/ORB_SLAM3_files/ORB_SLAM3/webcam# 

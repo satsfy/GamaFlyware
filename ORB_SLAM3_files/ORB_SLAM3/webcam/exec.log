@@ -1,0 +1,94 @@
+SLAM NODE
+This program gets images and IMU data from PX4-Autopilot and feeds it to ORBSLAM3
+[INFO] [1745371397.433577055] [slam_node]: main called
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch 
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+Seq. Name: 
+
+Camera Parameters: 
+- Camera: Pinhole
+- Image scale: 1
+- fx: 1405.33
+- fy: 1405.1
+- cx: 963.199
+- cy: 535.467
+- k1: 0.000948604
+- k2: 0.00108195
+- p1: -0.000404618
+- p2: 0.000512056
+- fps: 50
+- color order: RGB (ignored if grayscale)
+
+ORB Extractor Parameters: 
+- Number of Features: 250
+- Scale Levels: 4
+- Scale Factor: 1.2
+- Initial Fast Threshold: 10
+- Minimum Fast Threshold: 3
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+[INFO] [1745371402.341358871] [slam_node]: Initialized SLAM with image scale: 1.000000
+[INFO] [1745371402.341415693] [slam_node]: Node initialization complete. Waiting for IMU and image data...
+
+(ORB-SLAM3: Current Frame:103229): dbind-WARNING **: 01:23:22.462: Couldn't connect to accessibility bus: Failed to connect to socket /run/user/1000/at-spi/bus_1: No such file or directory
+Gtk-Message: 01:23:22.490: Failed to load module "canberra-gtk-module"
+Gtk-Message: 01:23:22.492: Failed to load module "canberra-gtk-module"
+Starting the Viewer
+[INFO] [1745371655.141308466] [rclcpp]: signal_handler(signum=2)
+Caught signal 2, shutting down gracefully.
+Shutdown timeout exceeded. Forcing exit.
+Executor finished spinning
+SLAMNode destructor called, shutting down SLAM system...
+Shutdown
+SLAM system shutdown completed.
+cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+[ERROR] [1745371655.144925981] [slam_node.rclcpp]: Error in destruction of rcl subscription handle: Failed to delete datareader, at ./src/subscription.cpp:52, at ./src/rcl/subscription.c:184
+cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+[ERROR] [1745371655.144969727] [slam_node.rclcpp]: Error in destruction of rcl subscription handle: Failed to delete datareader, at ./src/subscription.cpp:52, at ./src/rcl/subscription.c:184
+cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+Fail in delete datareader, at ./src/rmw_service.cpp:104 during '__function__'
+[ERROR] [1745371655.145058683] [slam_node.rclcpp]: Error in destruction of rcl service handle: Fail in delete datawriter, at ./src/rmw_service.cpp:119, at ./src/rcl/service.c:198
+cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+Fail in delete datareader, at ./src/rmw_service.cpp:104 during '__function__'
+[ERROR] [1745371655.145079594] [slam_node.rclcpp]: Error in destruction of rcl service handle: Fail in delete datawriter, at ./src/rmw_service.cpp:119, at ./src/rcl/service.c:198
+cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+Fail in delete datareader, at ./src/rmw_service.cpp:104 during '__function__'
+[ERROR] [1745371655.145099687] [slam_node.rclcpp]: Error in destruction of rcl service handle: Fail in delete datawriter, at ./src/rmw_service.cpp:119, at ./src/rcl/service.c:198
+cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+Fail in delete datareader, at ./src/rmw_service.cpp:104 during '__function__'
+[ERROR] [1745371655.145120041] [slam_node.rclcpp]: Error in destruction of rcl service handle: Fail in delete datawriter, at ./src/rmw_service.cpp:119, at ./src/rcl/service.c:198
+cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+Fail in delete datareader, at ./src/rmw_service.cpp:104 during '__function__'
+[ERROR] [1745371655.145230542] [slam_node.rclcpp]: Error in destruction of rcl service handle: Fail in delete datawriter, at ./src/rmw_service.cpp:119, at ./src/rcl/service.c:198
+cannot publish data, at ./src/rmw_publish.cpp:62 during '__function__'
+Fail in delete datareader, at ./src/rmw_service.cpp:104 during '__function__'
+[ERROR] [1745371655.145261165] [slam_node.rclcpp]: Error in destruction of rcl service handle: Fail in delete datawriter, at ./src/rmw_service.cpp:119, at ./src/rcl/service.c:198
+Failed to delete datawriter, at ./src/publisher.cpp:48 during '__function__'
+[ERROR] [1745371655.145277690] [slam_node.rclcpp]: Error in destruction of rcl publisher handle: cannot publish data, at ./src/rmw_publish.cpp:62, at ./src/rcl/publisher.c:187
+
+>>> [rcutils|error_handling.c:108] rcutils_set_error_state()
+This error state is being overwritten:
+
+  'cannot publish data, at ./src/rmw_publish.cpp:62'
+
+with this new error message:
+
+  'Failed to delete datareader, at ./src/subscription.cpp:52'
+
+rcutils_reset_error() should be called after error handling to avoid this.
+<<<
+__function__:80: 'destroy_subscription' failed
+Failed to delete dds publisher from participantFailed to delete dds subscriber from participant./run.sh: line 2: 103229 Segmentation fault      (core dumped) ./webcam ../Vocabulary/ORBvoc.txt ./config_px4_sitl.yaml

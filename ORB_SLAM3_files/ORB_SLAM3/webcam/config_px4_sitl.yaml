@@ -1,0 +1,77 @@
+%YAML:1.0
+
+# ------------------- CÂMERA -------------------
+Camera.type: "PinHole"
+
+# intrinsics (from K)
+Camera.fx: 1398.145133
+Camera.fy: 1398.143746
+Camera.cx: 958.598712
+Camera.cy: 539.448643
+
+# 5-parameter radial–tangential distortion (from D)
+Camera.k1: -0.000706516
+Camera.k2:  0.001367110
+Camera.p1: -0.000019129
+Camera.p2: -0.000031618
+# Camera.k3:  0.0            # (Usually not used in ORB-SLAM3 for pinhole)
+
+Camera.width: 1140 
+Camera.height: 720
+
+Camera.fps: 30
+Camera.RGB: 1               # 1 = RGB, 0 = BGR
+
+# ------------- ORB (mais robustez) -------------
+ORBextractor.nFeatures: 300
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 12
+ORBextractor.minThFAST: 7
+# ORBextractor.iniThFAST: 7
+# ORBextractor.minThFAST: 5
+
+# contínuo -------------
+# MinFrames: 0
+# MaxFrames: 60
+# ThRefRatio: 0.90
+
+# ------------- Sistema multi-mapa --------------
+# System.Sensor: "MONOCULAR"
+# System.NewMapTh: 5
+# System.MinKeyFrames: 10
+# System.EnableMapReuse: 1
+# System.EnableMapReuse: 0
+
+# System.LoadAtlasFromFile: 1
+# System.LoadAtlasFromFile: 0
+# System.LoadAtlasFromFile: ""
+# System.SaveAtlasToFile: "run_01.osa"
+
+# System.Sensor: "MONOCULAR"
+# System.EnableMapReuse: 0        # don’t merge with prior runs
+# System.NewMapTh: 5              # create new atlas after 5 lost frames
+# System.MinKeyFrames: 7
+#System.LoadAtlasFromFile: ""   # keep commented
+# System.SaveAtlasToFile: "/sitl/ORB_SLAM3_files/ORB_SLAM3/webcam/session_%Y%m%d_%H%M%S"
+
+# Make sure the directory already exists and is writable
+System.Sensor:          "MONOCULAR"
+System.EnableMapReuse:  0            # fresh map each run
+System.NewMapTh:        3
+System.MinKeyFrames:    2
+
+# ⬇︎ full, absolute path – ORB-SLAM3 *will* append “.osa”
+# System.SaveAtlasToFile: "/sitl/ORB_SLAM3_files/ORB_SLAM3/webcam/session_%Y%m%d_%H%M%S"
+
+# --------------- Visualizador ------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -3.5
+Viewer.ViewpointF: 500.0
