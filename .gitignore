@@ -22,3 +22,6 @@ PX4-Autopilot/
 
 # Unused files that we want to keep around for a while before we delete them permanently
 trash/
+
+# python artifacts
+*.pyc

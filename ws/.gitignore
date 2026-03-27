@@ -4,3 +4,4 @@ log/
 logs/
 exec.log
 logs.sh
+ekf_messages.log
