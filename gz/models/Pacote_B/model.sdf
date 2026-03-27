@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="pacote B">
+    <static>true</static> <!-- Define como false para que o objeto tenha física -->
+    <link name="link_00">
+      <pose>0 -5.2 0.02 -11 0 0</pose>
+
+      <inertial>
+        <mass>10.0</mass> <!-- Define a massa do objeto -->
+        <inertia> <!-- Define o momento de inércia -->
+          <ixx>0.4</ixx>
+          <ixy>0.0</ixy> <!-- Componentes cruzadas de inércia zeradas -->
+          <ixz>0.0</ixz>
+          <iyy>0.4</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.4</izz>
+        </inertia>
+      </inertial>
+      <gravity>true</gravity>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Pacote_B/meshes/pacote.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu> <!-- Coeficiente de fricção -->
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Pacote_B/meshes/pacote.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
+

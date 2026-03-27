@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version='1.9'>
+  <model name='x500_depth'>
+    <include merge='true'>
+      <uri>x500</uri>
+    </include>
+    <include merge='true'>
+      <uri>model://OakD-Lite</uri>
+      <!-- <pose>1.8 -0.27 1.05 0 1.5 0</pose>
+      <pose>1.8 -0.27 1.05 0 1.5 0</pose> -->
+       <!-- <pose>.12 .03 .242 0 1.5707963267948966 0</pose> -->
+       <!-- <pose>.12 .03 .242 0 0 0</pose> -->
+       <!-- <pose>.12 .03 .242 0 0 1.5707963267948966</pose> -->
+       <!-- <pose>0 0 0 0 1.5707963267948966 0</pose> =============== last -->
+       <pose>-0.0 .03 -0.1 0 1.0 0</pose>
+       <!-- <pose>0 10 0 0 1.5707963267948966 0</pose> -->
+       <!-- <pose>X Y -Z roll, pitch, yaw</pose> -->
+    </include>
+    <joint name="CameraJoint" type="fixed">
+      <parent>base_link</parent>
+      <child>OakD-Lite/base_link</child>
+      <pose relative_to="base_link">.12 .03 .242 0 0 0</pose>
+    </joint>
+  </model>
+</sdf>

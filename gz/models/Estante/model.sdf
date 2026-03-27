@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="Estante">
+    <static>true</static> <!-- Define como false para que o objeto tenha física -->
+    <link name="link_E">
+      <pose>7.2 -15 0 -11 0 11</pose>
+
+      <inertial>
+        <mass>5.0</mass> <!-- Define a massa do objeto -->
+        <inertia> <!-- Define o momento de inércia -->
+          <ixx>0.2</ixx>
+          <ixy>0.2</ixy>
+          <ixz>0.2</ixz>
+        </inertia>
+      </inertial>
+      <gravity>true</gravity>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Estante/meshes/estantedef.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Estante/meshes/estantedef.obj</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
+

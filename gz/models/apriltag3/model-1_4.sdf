@@ -1,0 +1,14 @@
+<?xml version="1.0" ?><sdf version="1.4">
+  <model name="apriltag3">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://apriltag3/meshes/apriltag3.dae</uri>
+          <scale>0.02 0.02 0.0000001</scale></mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
