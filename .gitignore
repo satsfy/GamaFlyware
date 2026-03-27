@@ -1,0 +1,26 @@
+QGroundControl.AppImage
+
+px4_msgs_ws/*
+!px4_msgs_ws/README.md
+
+ORB_SLAM3_files/*
+!ORB_SLAM3_files/ORB_SLAM3/
+ORB_SLAM3_files/ORB_SLAM3/*
+!ORB_SLAM3_files/ORB_SLAM3/webcam/
+!ORB_SLAM3_files/ORB_SLAM3/build.sh
+!ORB_SLAM3_files/ORB_SLAM3/CMakeLists.txt
+
+PX4-Autopilot/*
+!PX4-Autopilot/Tools/
+PX4-Autopilot/Tools/*
+!PX4-Autopilot/Tools/simulation/
+PX4-Autopilot/Tools/simulation/*
+!PX4-Autopilot/Tools/simulation/gz/
+
+*.pyc
+ORB_SLAM3_files/ORB_SLAM3/webcam/exec.log
+ws/ekf_messages.log
+ORB_SLAM3_files/ORB_SLAM3/webcam/point_cloud.json
+
+# Unused files that we want to keep around for a while before we delete them permanently
+trash/
