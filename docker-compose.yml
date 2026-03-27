@@ -1,0 +1,39 @@
+services:
+  gameflyware:
+    image: renatobrittoaraujo/gamaflyware:2
+    container_name: gameflyware
+    working_dir: /sitl
+    mem_limit: 30g
+    cpus: "12.0"
+    privileged: true
+    command: /bin/bash -c "id -u qgcuser &>/dev/null || useradd -m qgcuser && usermod -aG dialout qgcuser && apt-get update && apt-get install -y sudo fuse libfuse2 && echo 'qgcuser ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers && apt-get remove -y modemmanager && chown -R qgcuser:qgcuser /sitl && su qgcuser -c 'bash -c \"sleep infinity\"'"
+    group_add:
+      - dialout
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+    # or older-style if that doesn't work:
+    # runtime: nvidia
+    # devices:
+    #   - /dev/dri:/dev/dri
+
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+
+    environment:
+      - DISPLAY=${DISPLAY}
+      - HOST_USERNAME=renato
+      - QT_X11_NO_MITSHM=1
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics,display
+
+    # network_mode: "host"
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
