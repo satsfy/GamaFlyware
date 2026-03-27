@@ -1,0 +1,11 @@
+{
+  "name": "XTDrone Dev Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "tcc",
+  "workspaceFolder": "/sitl",
+  "extensions": [
+    "ms-python.python"
+  ],
+  "remoteUser": "root"
+}
+
